@@ -7,5 +7,5 @@ export const bot = new KBotify({
     port: auth.khlport,
     verifyToken: auth.khlverify,
     key: auth.khlkey,
-    ignoreDecryptError: true,
+    ignoreDecryptError: false,
 });
