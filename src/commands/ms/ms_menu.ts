@@ -1,13 +1,15 @@
 import { Card, MenuCommand } from 'kbotify';
 import { streamers } from './streamers';
+import { colorTagsInit } from './color_tags_init';
+import { colorTagsBuild } from './color_tags_build';
 
 class MSMenu extends MenuCommand {
-    code = 'ms';
-    trigger = 'ms';
-    help = '';
-    intro = '菜单';
-    menu = mainMenu;
-    useCardMenu = true; // 使用卡片菜单
+  code = 'ms';
+  trigger = 'ms';
+  help = '';
+  intro = '菜单';
+  menu = mainMenu;
+  useCardMenu = true; // 使用卡片菜单
 }
 
 
@@ -36,4 +38,4 @@ const mainMenu = `[
   ]`
 
 
-export const msMenu = new MSMenu(streamers);
+export const msMenu = new MSMenu(streamers, colorTagsInit, colorTagsBuild);
