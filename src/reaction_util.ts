@@ -45,7 +45,7 @@ export const actionFilter = async (message: any, env: string = "test") => {
   let role_id: string | undefined = undefined;
 
   if (env === "test") {
-    role_id = TEST_SERVER_EMOJI_ROLE.get(emoji_name)
+    role_id = TEST_SERVER_EMOJI_ROLE.get(emoji_id)
   } else if (env === "prod") {
     role_id = MS_SERVER_EMOJI_ROLE.get(emoji_id);
   }
