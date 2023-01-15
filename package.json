@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/lilyzhaoyilu/MSBot#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "kbotify": "^0.2.5"
   },
   "devDependencies": {
