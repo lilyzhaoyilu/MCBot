@@ -5,7 +5,7 @@ import { actionFilter } from 'reaction_util';
 
 bot.messageSource.on('message', (ms: any) => {
   // 有在prod需要改的地方
-  console.log("corgi top: ", ms);
+  // console.log("corgi top: ", ms);
   actionFilter(ms, "test");
 });
 

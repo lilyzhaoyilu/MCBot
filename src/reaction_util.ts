@@ -1,5 +1,5 @@
 import { bot } from 'init/client';
-const TARGET_MESSAGE_IDS = ['2a244237-2b9e-44d8-8e6c-ba33a028e7bf']
+const TARGET_MESSAGE_IDS = ['2a244237-2b9e-44d8-8e6c-ba33a028e7bf', 'f7d692ff-e2f4-4a94-a8ff-769e2292adc5']
 
 export const TEST_SERVER_EMOJI_ROLE = new Map<string, string>([
   ['1613997086764422/xTRDfj84Sb09u09o', '8902146'], //pink

@@ -15,8 +15,8 @@ class ColorTagsBuild extends AppCommand {
 
     const message_id = session.args[0];
 
-    for (const emoji_id of TEST_SERVER_EMOJI_ROLE.keys()) {
-      console.log("emoji ids: ", emoji_id);
+    for (const emoji_id of MS_SERVER_EMOJI_ROLE.keys()) {
+      // console.log("emoji ids: ", emoji_id);
       try {
         await session.client.API.message.addReaction(message_id, emoji_id);
       } catch (err) {
